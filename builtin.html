@@ -57,7 +57,7 @@
 
 			    var output: VertexOutput;
 
-			    output.depth = 1 - (f32(vertexIndex/3 + 1) / 3);
+			    output.depth = (f32(vertexIndex/3 + 1) / 3);
 			    output.position = vec4f(pos[vertexIndex], output.depth, 1.0);
 
 			    return output;
